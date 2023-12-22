@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .bold{
+        font-style:italic;
+    }
+</style>
+<body>
+    <div class="parent">
+    <div class="day">Sunday</div>
+    <div class="day">Monday</div>
+    <div class="day">Tuesday</div>
+    <div id="day">Wednesday</div>
+    <div id="day">Thrursday</div>
+    <div id="day">friday</div>
+    <div id="moor">Saturaday</div>
+
+    <button id="change-title-btn" style="border-radius:50% ;">dark mode</button>
+</div>
+    <script>
+    let Titletext = document.getElementById("day");
+    let Titlebtn=document.getElementById("change-title-btn");
+    Titlebtn.addEventListener("click",() =>{
+        document.body.style.backgroundColor="#212121";
+        document.body.style.color="white";
+        
+    });
+   /* if(   document.body.style.backgroundColor="#212121"=="#212121"){
+    Titlebtn.addEventListener("click",() =>{
+        document.body.style.backgroundColor="white";
+        document.body.style.Color="black";
+        
+    });
+}*/
+    </script>
+    <script src="assimentDom.js"></script>
+
+</body>
+
+</html>
